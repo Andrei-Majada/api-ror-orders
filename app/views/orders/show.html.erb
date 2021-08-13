@@ -1,0 +1,11 @@
+<h1><%= @order.control_number %></h1>
+
+<p><%= @order.state %></p>
+
+<ul>
+  <li><%= link_to "Next Status", edit_order_path(@order) %></li>
+</ul>
+
+<ul>
+  <li><%= link_to "Home", orders_path %></li>
+</ul>

@@ -1,0 +1,13 @@
+<h1>Filtring Orders by control number</h1>
+
+<ul>
+  <% @orders.each do |order| %>
+
+    <li>
+      <%= link_to order.control_number, order %>
+      <%= order.state %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Order", new_order_path %>

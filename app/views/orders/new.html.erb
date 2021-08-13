@@ -1,0 +1,15 @@
+<h1>New Order</h1>
+
+<%= form_with model: @order do |form| %>
+  <div>
+    <%= form.label :control_number %><br>
+    <%= form.text_field :control_number %>
+    <% @order.errors.full_messages_for(:control_number).each do |message| %>
+        <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
