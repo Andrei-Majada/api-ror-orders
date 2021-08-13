@@ -22,6 +22,12 @@ then install
 rails webpacker:install
 ```
 
+and run
+
+```bash
+rake db:migrate
+```
+
 this system use **``ruby 3.0.2``** and **``rails 6.1.4``**
 
 ## Usage
